@@ -1,35 +1,36 @@
 Image denoising with a CRF
 ==========================
 
-Simple Python interface with GCoptimization (http://vision.csd.uwo.ca/code/).
+Simple Python interface for GCoptimization (http://vision.csd.uwo.ca/code/).
 
 The two examples implement the image restoration method presented on Herve
-Lombaert's page (http://step.polymtl.ca/~rv101/energy/) where we minimize:
+Lombaert's page (http://step.polymtl.ca/~rv101/energy/) where we minimize the
+following energy of a Conditional Random Field (CRF): 
 
-<img src="equation/equation.png" alt="equation" width="200">
+![CRF equation](equation/equation.png)
 
 
 ``python test_cube.py``
 
-<img src="noisy_cube.png" width="150"> &nbsp; <img src="denoised_cube.png" width="150">
+<img src="img/noisy_cube.png" width="200"> &nbsp; <img src="denoised_cube.png" width="200">
 
 
 ``python test_lena.py``
 
-<img src="noisy_lena.png" width="150"> &nbsp; <img src="denoised_lena.png" width="150">
+<img src="noisy_lena.png" width="200"> &nbsp; <img src="denoised_lena.png" width="200">
 
 
 
 References
 ----------
 
-Computer Vision Research Group at the University of Western Ontario:
+Computer Vision Research Group at the University of Western Ontario:           
 http://vision.csd.uwo.ca/code/
 
-Python wrappers for GCO by Andreas Müller:     
+Python wrappers for GCO by Andreas Müller:        
 https://github.com/amueller/gco_python
 
-Energy minimization with Graph Cuts (Herve Lombaert):
+Energy minimization with Graph Cuts (Herve Lombaert):            
 http://step.polymtl.ca/~rv101/energy/
 
 "Efficient Approximate Energy Minimization via Graph Cuts".    
